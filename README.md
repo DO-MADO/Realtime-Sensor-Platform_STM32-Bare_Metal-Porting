@@ -19,7 +19,7 @@
 
 <br />
 
-<h2>프로젝트 개요</h2>
+<h2>📌 프로젝트 개요</h2>
 
 <table>
   <tr>
@@ -44,7 +44,9 @@
   </tr>
 </table>
 
-<h2>왜 STM32로 옮겼는가</h2>
+<br>
+
+<h2>[❓] 왜 STM32로 옮겼는가</h2>
 
 <table>
   <tr>
@@ -65,7 +67,12 @@
   </tr>
 </table>
 
-<h2>시스템 구조</h2>
+<br>
+
+<h2>⚙️ 시스템 구조</h2>
+
+- 하단 상세 flow 참고
+
 
 ```mermaid
 flowchart LR
@@ -78,7 +85,9 @@ flowchart LR
     E --> H["CSV Logging"]
 ```
 
-<h2>주요 구현 내용</h2>
+<br>
+
+<h2>🌟 주요 구현 내용</h2>
 
 <table>
   <tr>
@@ -121,7 +130,9 @@ flowchart LR
   </tr>
 </table>
 
-<h2>데이터 흐름</h2>
+<br>
+
+<h2>🔁 데이터 흐름</h2>
 
 <pre>
 PC Configuration
@@ -134,7 +145,9 @@ STM32 to PC
   st|sid|timestamp_ms|sampling_rate|nsamp|status|RAW8|PROC8|MA8|nsamp|status|tempC|end
 </pre>
 
-<h2>Repository Layout</h2>
+<br>
+
+<h2>📁 Repository Layout</h2>
 
 <table>
   <tr>
@@ -171,6 +184,8 @@ STM32 to PC
   </tr>
 </table>
 
+<br>
+
 <h2>Tech Stack</h2>
 
 <table>
@@ -179,24 +194,51 @@ STM32 to PC
     <th>Stack</th>
   </tr>
   <tr>
-    <td>Firmware</td>
-    <td>C, STM32 HAL, Bare-Metal Loop, UART Interrupt, RS-485</td>
+    <td><b>Firmware</b></td>
+    <td>
+      <img alt="C" src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+      <img alt="STM32H7" src="https://img.shields.io/badge/STM32H7-03234B?style=flat-square" />
+      <img alt="STM32 HAL" src="https://img.shields.io/badge/STM32%20HAL-2F4F4F?style=flat-square" />
+      <img alt="Bare Metal" src="https://img.shields.io/badge/Bare--Metal-4A5568?style=flat-square" />
+      <img alt="UART Interrupt" src="https://img.shields.io/badge/UART%20Interrupt-005BBB?style=flat-square" />
+      <img alt="RS485" src="https://img.shields.io/badge/RS--485-005BBB?style=flat-square" />
+    </td>
   </tr>
   <tr>
-    <td>Signal Processing</td>
-    <td>8ch RAW acquisition, IIR LPF, Moving Average, Gain/Offset Calibration</td>
+    <td><b>Signal Processing</b></td>
+    <td>
+      <img alt="8ch RAW" src="https://img.shields.io/badge/8ch%20RAW-Acquisition-6B7280?style=flat-square" />
+      <img alt="IIR LPF" src="https://img.shields.io/badge/IIR-LPF-0F766E?style=flat-square" />
+      <img alt="Moving Average" src="https://img.shields.io/badge/Moving%20Average-MA-0F766E?style=flat-square" />
+      <img alt="Gain Offset Calibration" src="https://img.shields.io/badge/Gain%20%2F%20Offset-Calibration-7C3AED?style=flat-square" />
+    </td>
   </tr>
   <tr>
-    <td>Server</td>
-    <td>Python, FastAPI, WebSocket, PySerial, NumPy, Pandas</td>
+    <td><b>Server</b></td>
+    <td>
+      <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+      <img alt="WebSocket" src="https://img.shields.io/badge/WebSocket-Realtime-111827?style=flat-square" />
+      <img alt="PySerial" src="https://img.shields.io/badge/PySerial-Serial%20IO-005BBB?style=flat-square" />
+      <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
+      <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+    </td>
   </tr>
   <tr>
-    <td>Frontend</td>
-    <td>HTML, CSS, JavaScript, realtime chart UI</td>
+    <td><b>Frontend</b></td>
+    <td>
+      <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+      <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+      <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+      <img alt="Realtime Chart UI" src="https://img.shields.io/badge/Realtime%20Chart-UI-FF6F00?style=flat-square" />
+    </td>
   </tr>
 </table>
 
-<h2>현재 상태</h2>
+
+<br>
+
+<h2>📍  현재 상태</h2>
 
 <ul>
   <li>STM32 펌웨어 기준 데이터 취득/처리/전송 루프 구성</li>
@@ -206,7 +248,9 @@ STM32 to PC
   <li>CSV 저장 기능을 통해 실험 로그 확보 가능</li>
 </ul>
 
-<h2>프로젝트 의의</h2>
+<br>
+
+<h2>👨🏻‍💻 프로젝트 의의</h2>
 
 <p>
   이 프로젝트는 FPGA/ZedBoard에서 검증한 실시간 센서 처리 구조를
@@ -218,3 +262,34 @@ STM32 to PC
   단순 코드 변환이 아니라 보드 변경에 맞춰 데이터 취득 방식, 런타임 설정 프로토콜,
   필터/보정 처리 위치, PC UI 연동 방식을 다시 설계한 리팩토링 프로젝트입니다.
 </p>
+
+---
+
+```mermaid
+flowchart TD
+    UI["Browser UI<br/>Configuration / Graph / Temperature"] --> API["FastAPI Server<br/>REST + WebSocket"]
+
+    API --> CFG["Config Encoder<br/>st|lpf|fs|range|avg|coeffs|end"]
+    CFG --> RS485_TX["RS-485 TX"]
+    RS485_TX --> STM32_RX["STM32 USART3 RX Interrupt"]
+
+    STM32_RX --> PARSER["Firmware Config Parser"]
+    PARSER --> PARAMS["Runtime Parameters<br/>LPF / MA / Gain / Offset / Flags"]
+
+    ADC["AD7606 / Sensor Input"] --> RAW["RAW8 Sampling"]
+    PARAMS --> PROC["Signal Processing"]
+    RAW --> PROC
+
+    PROC --> BLOCKS["RAW8 / PROC8 / MA8"]
+    TEMP["ADS1115 / NTC Temperature"] --> BLOCKS
+
+    BLOCKS --> FRAME["Data Frame<br/>st|sid|ts|fs|status|payload|tempC|end"]
+    FRAME --> RS485_RX["RS-485 RX"]
+    RS485_RX --> SERIAL["serial_io.py Parser"]
+    SERIAL --> PIPE["pipeline.py<br/>Stage Split"]
+    PIPE --> WS["WebSocket Broadcast"]
+    WS --> UI
+
+    PIPE --> CSV["CSV Log Save"]
+
+```
