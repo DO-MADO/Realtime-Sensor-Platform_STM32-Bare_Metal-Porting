@@ -1,5 +1,8 @@
 <div align="center">
 
+<img width="734" height="438" alt="스크린샷 2026-05-11 오전 1 30 38" src="https://github.com/user-attachments/assets/3b66055d-f97e-4a79-86c1-107d4bf4d39e" />
+
+
 <h1>Realtime Sensor Platform - STM32 Bare-Metal Porting</h1>
 
 <p>
